@@ -40,7 +40,7 @@
 #define YY_USE_CLASS
 #endif
 #ifndef _MSDOS
-/*#include <osfcn.h>*/
+//#include <osfcn.h>
 #endif
 #else   /* ! __cplusplus */
 #ifdef __STDC__
@@ -171,7 +171,7 @@ int read();
 	if ( yy___input((char *)buf, result,max_size) < 0 ) \
 	    YY_FATAL_ERROR( "YY_INPUT() in flex scanner failed" );
 
-#define YY_FATAL_ERROR(msg) yy___fatal_error(msg)
+#define YY_FATAL_ERROR(msg) yy___fatal_error((char*)&msg)
 #define yywrap() yy___wrap()
 
 #endif

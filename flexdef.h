@@ -132,8 +132,21 @@ char *memset();
 
 #ifdef __GNUC__
 #include <stddef.h>
-void *malloc( size_t );
-void free( void* );
+#include <stdlib.h>
+extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+     __THROW __nonnull ((1, 2));
+extern char *strncpy (char *__restrict __dest,
+		      const char *__restrict __src, size_t __n)
+     __THROW __nonnull ((1, 2));
+extern int strcmp (const char *__s1, const char *__s2)
+     __THROW __attribute_pure__ __nonnull ((1, 2));
+extern int strncmp (const char *__s1, const char *__s2, size_t __n)
+     __THROW __attribute_pure__ __nonnull ((1, 2));
+extern size_t strlen (const char *__s)
+     __THROW __attribute_pure__ __nonnull ((1));
+extern void *memset (void *__s, int __c, size_t __n) __THROW __nonnull ((1));
+extern char *strcat (char *__restrict __dest, const char *__restrict __src)
+     __THROW __nonnull ((1, 2));
 #else
 #include <stdlib.h>
 #endif

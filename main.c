@@ -737,7 +737,7 @@ get_next_arg: /* used by -C and -S flags in lieu of a "continue 2" control */
 	(void) strcpy( ftmp, "/flXXXXXX.tmp" );
 #endif
       action_file_name=ftmp;
-      (void) mktemp( action_file_name );
+      (void) mkstemp( action_file_name );
      }
     else
      {
@@ -758,7 +758,7 @@ get_next_arg: /* used by -C and -S flags in lieu of a "continue 2" control */
 #else
 	(void) strcpy( temp_action_file_name, "flXXXXXX.tmp" );
 #endif
-	(void) mktemp( temp_action_file_name );
+	(void) mkstemp( temp_action_file_name );
 	action_file_name = temp_action_file_name;
 	}
 

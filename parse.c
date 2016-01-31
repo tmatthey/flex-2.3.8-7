@@ -6,7 +6,7 @@
   */
 
 
-#line 1 "/u/icdc/rdt/tools/lib/bison.cc"
+#line 1 "/home/tma/lib/bison.cc"
 /* -*-C-*-  Note some compilers choke on comments on `#line' lines.  */
 /* Skeleton output parser for bison,
    Copyright (C) 1984, 1989, 1990 Bob Corbett and Richard Stallman
@@ -84,7 +84,7 @@ void *alloca ();
 #include <stdio.h>
 #define YYBISON 1  
 
-/* #line 77 "/u/icdc/rdt/tools/lib/bison.cc" */
+/* #line 77 "/home/tma/lib/bison.cc" */
 #line 89 "y.tab.c"
 #line 6 "parse.y"
 
@@ -131,7 +131,7 @@ static int madeany = false;  /* whether we've made the '.' character class */
 int previous_continued_action;	/* whether the previous rule's action was '|' */
 
 
-#line 77 "/u/icdc/rdt/tools/lib/bison.cc"
+#line 77 "/home/tma/lib/bison.cc"
 /* %{ and %header{ and %union, during decl */
 #define YY_parse_BISON 1
 #ifndef YY_parse_COMPATIBILITY
@@ -177,36 +177,36 @@ int previous_continued_action;	/* whether the previous rule's action was '|' */
 
 #ifndef YY_parse_PURE
 
-/* #line 121 "/u/icdc/rdt/tools/lib/bison.cc" */
+/* #line 121 "/home/tma/lib/bison.cc" */
 #line 182 "y.tab.c"
 
-#line 121 "/u/icdc/rdt/tools/lib/bison.cc"
+#line 121 "/home/tma/lib/bison.cc"
 /*  YY_parse_PURE */
 #endif
 
 /* section apres lecture def, avant lecture grammaire S2 */
 
-/* #line 125 "/u/icdc/rdt/tools/lib/bison.cc" */
+/* #line 125 "/home/tma/lib/bison.cc" */
 #line 191 "y.tab.c"
 
-#line 125 "/u/icdc/rdt/tools/lib/bison.cc"
+#line 125 "/home/tma/lib/bison.cc"
 /* prefix */
 #ifndef YY_parse_DEBUG
 
-/* #line 127 "/u/icdc/rdt/tools/lib/bison.cc" */
+/* #line 127 "/home/tma/lib/bison.cc" */
 #line 198 "y.tab.c"
 
-#line 127 "/u/icdc/rdt/tools/lib/bison.cc"
+#line 127 "/home/tma/lib/bison.cc"
 /* YY_parse_DEBUG */
 #endif
 
 
 #ifndef YY_parse_LSP_NEEDED
 
-/* #line 132 "/u/icdc/rdt/tools/lib/bison.cc" */
+/* #line 132 "/home/tma/lib/bison.cc" */
 #line 208 "y.tab.c"
 
-#line 132 "/u/icdc/rdt/tools/lib/bison.cc"
+#line 132 "/home/tma/lib/bison.cc"
  /* YY_parse_LSP_NEEDED*/
 #endif
 
@@ -216,7 +216,7 @@ int previous_continued_action;	/* whether the previous rule's action was '|' */
 #ifdef YY_parse_LSP_NEEDED
 #ifndef YY_parse_LTYPE
 typedef
-  struct yyltype
+  struct yy_parse_ltype
     {
       int timestamp;
       int first_line;
@@ -225,9 +225,9 @@ typedef
       int last_column;
       char *text;
    }
-  yyltype;
+  yy_parse_ltype;
 
-#define YY_parse_LTYPE yyltype
+#define YY_parse_LTYPE yy_parse_ltype
 #endif
 #endif
 /* DEFAULT STYPE*/
@@ -316,7 +316,7 @@ typedef
 #ifndef YY_USE_CLASS
 /* TOKEN C */
 
-/* #line 240 "/u/icdc/rdt/tools/lib/bison.cc" */
+/* #line 240 "/home/tma/lib/bison.cc" */
 #line 321 "y.tab.c"
 #define	CHAR	258
 #define	NUMBER	259
@@ -329,7 +329,7 @@ typedef
 #define	EOF_OP	266
 
 
-#line 240 "/u/icdc/rdt/tools/lib/bison.cc"
+#line 240 "/home/tma/lib/bison.cc"
  /* #defines tokens */
 #else
 /* CLASS */
@@ -361,7 +361,7 @@ typedef
 #ifndef YY_parse_USE_CONST_TOKEN
 #define YY_parse_USE_CONST_TOKEN 0
 /* yes enum is more compatible with flex,  */
-/* so by default we use it */ 
+/* so by default we use it */
 #endif
 #if YY_parse_USE_CONST_TOKEN != 0
 #ifndef YY_parse_ENUM_TOKEN
@@ -371,11 +371,11 @@ typedef
 
 class YY_parse_CLASS YY_parse_INHERIT
 {
-public: 
+public:
 #if YY_parse_USE_CONST_TOKEN != 0
 /* static const int token ... */
 
-/* #line 284 "/u/icdc/rdt/tools/lib/bison.cc" */
+/* #line 284 "/home/tma/lib/bison.cc" */
 #line 380 "y.tab.c"
 static const int CHAR;
 static const int NUMBER;
@@ -388,12 +388,12 @@ static const int PREVCCL;
 static const int EOF_OP;
 
 
-#line 284 "/u/icdc/rdt/tools/lib/bison.cc"
+#line 284 "/home/tma/lib/bison.cc"
  /* decl const */
 #else
 enum YY_parse_ENUM_TOKEN { YY_parse_NULL_TOKEN=0
 
-/* #line 287 "/u/icdc/rdt/tools/lib/bison.cc" */
+/* #line 287 "/home/tma/lib/bison.cc" */
 #line 398 "y.tab.c"
 	,CHAR=258
 	,NUMBER=259
@@ -406,7 +406,7 @@ enum YY_parse_ENUM_TOKEN { YY_parse_NULL_TOKEN=0
 	,EOF_OP=266
 
 
-#line 287 "/u/icdc/rdt/tools/lib/bison.cc"
+#line 287 "/home/tma/lib/bison.cc"
  /* enum token */
      }; /* end of enum declaration */
 #endif
@@ -439,7 +439,7 @@ public:
 /* other declare folow */
 #if YY_parse_USE_CONST_TOKEN != 0
 
-/* #line 318 "/u/icdc/rdt/tools/lib/bison.cc" */
+/* #line 318 "/home/tma/lib/bison.cc" */
 #line 444 "y.tab.c"
 const int YY_parse_CLASS::CHAR=258;
 const int YY_parse_CLASS::NUMBER=259;
@@ -452,7 +452,7 @@ const int YY_parse_CLASS::PREVCCL=265;
 const int YY_parse_CLASS::EOF_OP=266;
 
 
-#line 318 "/u/icdc/rdt/tools/lib/bison.cc"
+#line 318 "/home/tma/lib/bison.cc"
  /* const YY_parse_CLASS::token */
 #endif
 /*apres const  */
@@ -465,7 +465,7 @@ YY_parse_CONSTRUCTOR_CODE;
 };
 #endif
 
-/* #line 329 "/u/icdc/rdt/tools/lib/bison.cc" */
+/* #line 329 "/home/tma/lib/bison.cc" */
 #line 470 "y.tab.c"
 
 
@@ -635,7 +635,7 @@ static const short yycheck[] = {    31,
     42
 };
 
-#line 329 "/u/icdc/rdt/tools/lib/bison.cc"
+#line 329 "/home/tma/lib/bison.cc"
  /* fattrs + tables */
 
 /* parser code folow  */
@@ -651,7 +651,7 @@ static const short yycheck[] = {    31,
    as one case of the switch.  */ 
 
 #if YY_parse_USE_GOTO != 0
-/* 
+/*
  SUPRESSION OF GOTO : on some C++ compiler (sun c++)
   the goto is strictly forbidden if any constructor/destructor
   is used in the whole function (very stupid isn't it ?)
@@ -662,19 +662,19 @@ static const short yycheck[] = {    31,
 #define YYBEGINGOTO  enum yy_labels yy_gotostate=yygotostart; \
                      for(;;) switch(yy_gotostate) { case yygotostart: {
 #define YYLABEL(lb) } case lb: {
-#define YYENDGOTO } } 
+#define YYENDGOTO } }
 #define YYBEGINDECLARELABEL enum yy_labels {yygotostart
 #define YYDECLARELABEL(lb) ,lb
 #define YYENDDECLARELABEL  };
 #else
 /* macro to keep goto */
 #define YYGOTO(lb) goto lb
-#define YYBEGINGOTO 
+#define YYBEGINGOTO
 #define YYLABEL(lb) lb:
 #define YYENDGOTO
-#define YYBEGINDECLARELABEL 
+#define YYBEGINDECLARELABEL
 #define YYDECLARELABEL(lb)
-#define YYENDDECLARELABEL 
+#define YYENDDECLARELABEL
 #endif
 /* LABEL DECLARATION */
 YYBEGINDECLARELABEL
@@ -687,7 +687,7 @@ YYBEGINDECLARELABEL
   YYDECLARELABEL(yyerrlab1)   /* here on error raised explicitly by an action */
   YYDECLARELABEL(yyerrdefault)  /* current state does not do anything special for the error token. */
   YYDECLARELABEL(yyerrpop)   /* pop the current state because it cannot handle the error token */
-  YYDECLARELABEL(yyerrhandle)  
+  YYDECLARELABEL(yyerrhandle)
 YYENDDECLARELABEL
 
 #define yyerrok         (yyerrstatus = 0)
@@ -1091,7 +1091,7 @@ YYLABEL(yyreduce)
 #endif
 
 
-/* #line 783 "/u/icdc/rdt/tools/lib/bison.cc" */
+/* #line 783 "/home/tma/lib/bison.cc" */
 #line 1096 "y.tab.c"
 
   switch (yyn) {
@@ -1712,7 +1712,7 @@ case 53:
     break;}
 }
 
-#line 783 "/u/icdc/rdt/tools/lib/bison.cc"
+#line 783 "/home/tma/lib/bison.cc"
    /* the action file gets copied in in place of this dollarsign  */
   yyvsp -= yylen;
   yyssp -= yylen;
@@ -1913,7 +1913,7 @@ YYLABEL(yyerrhandle)
 
 /* END */
 
-/* #line 982 "/u/icdc/rdt/tools/lib/bison.cc" */
+/* #line 982 "/home/tma/lib/bison.cc" */
 #line 1918 "y.tab.c"
 #line 649 "parse.y"
 

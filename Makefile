@@ -43,15 +43,10 @@
 #AUXDIR = /usr/local/lib
 #MANDIR = /usr/man/manl
 DESTDIR = $(ENV_DIR)/
-BINDIR = tools/bin
-LIBDIR = tools/lib
-AUXDIR = tools/lib
-MANDIR = doc/man/man1
-DESTDIR = $(HOME)/
-BINDIR = bin
-LIBDIR = lib
-AUXDIR = lib
-MANDIR = man/man1
+BINDIR = $(HOME)/bin
+LIBDIR = $(HOME)/lib
+AUXDIR = $(HOME)/lib
+MANDIR = $(HOME)/man/man1
 MANEXT = 1
 INSTALLMAN = man
 .SUFFIXES : .dman
@@ -72,7 +67,7 @@ COMPRESSION =
 FLEX_FLAGS = -ist8
 # which "flex" to use to generate scan.c from scan.l
 FLEX = flex++
-YACC= bison++ -y
+YACC= $(HOME)/bin/bison++ -y
 # CC = cc
 
 AR = ar
